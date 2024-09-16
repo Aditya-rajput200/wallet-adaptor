@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
 function Airdrop() {
      const {connection}  = useConnection();

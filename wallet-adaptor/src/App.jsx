@@ -11,8 +11,10 @@ import { clusterApiUrl } from '@solana/web3.js';
 
 // Default styles that can be overridden by your app
 import '@solana/wallet-adapter-react-ui/styles.css';
-import Airdrop from './Airdrop';
-import Ballance from './Ballance';
+import Airdrop from './components/Airdrop';
+import Ballance from './components/Ballance';
+import SigningMsg  from './components/SigningMsg';
+import Sendsol from './components/Sendsol';
 
 function App() {
   return (
@@ -24,7 +26,9 @@ function App() {
             <WalletMultiButton />
             <WalletDisconnectButton />
             <Airdrop />
-       <Ballance/>
+            <Ballance/>
+            <SigningMsg />
+            <Sendsol/>
           </WalletModalProvider>
         </WalletProvider>
       </ConnectionProvider>
