@@ -3,7 +3,7 @@ import { useConnection, useWallet } from "@solana/wallet-adapter-react"
 import { LAMPORTS_PER_SOL, PublicKey, SystemProgram, Transaction} from "@solana/web3.js";
 function Sendsol() {
     const wallet = useWallet();
-    const connection = useConnection();
+    const {connection} = useConnection();
     const sendTokens = async ()=>{
        try {
         const to = document.getElementById("to").value;
